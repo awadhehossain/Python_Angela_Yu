@@ -62,4 +62,6 @@ print(False)
 
 #It's use for condition perposes
 
+#In python language no need to decler data type ,such as: int a,float b,bool c etc
+
 
