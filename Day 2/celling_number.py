@@ -7,6 +7,6 @@ print(result)
 
 # Fun
 b=a
-Result=int(b)+1
+Result=int(b)+1 #First floor then add one :)
 print(Result)
 

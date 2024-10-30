@@ -11,7 +11,6 @@ print(5 / 3)# Dtatype float
 print(5 // 3)
 # As like as pow function
 print(2 ** 3)
-
 # Reminderß
 print(5%2)
 
