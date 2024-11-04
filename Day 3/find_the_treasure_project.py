@@ -20,6 +20,9 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
+# you can add multiple line in print opr input statement use '''(Three single code)
+# Such as print('''multiple line ''')
+
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 choice1=input("You are at a crossroad, where do you want to go? Type r for right or typr l for left\n")
@@ -43,4 +46,3 @@ elif choice1=="l":
     print("You fell in to a hole. Game Over.")
 else:
     print("You put the wrong input.")
-
