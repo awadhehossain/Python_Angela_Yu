@@ -25,11 +25,18 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-choice1=input("You are at a crossroad, where do you want to go? Type r for right or typr l for left\n")
-if choice1=="r":
-    choice2=input("You+ are ve come to a lake.There is an island in the middle of the lake.Type wait to wait for a boat.Type swim to swim across.\n")
+choice1=input('You\'re at a crossroad,' 
+              'where do you want to go?'
+              'Type "right" for right or typr l for left\n').lower()
+if choice1=="right":
+    choice2=input('You\'re come to a lake.'
+                  'There is an island in the middle of the lake.'
+                  'Type "wait" to wait for a boat.'
+                  'Type "swim" to swim across.\n').lower()
     if choice2=="wait":
-        choice3=input("You arrive at the island unharmed.There is house with 3 doors. One red ,one yellow and one blue.Which colour do you choose?\n")
+        choice3=input('You arrive at the island unharmed.'
+                      'There is house with 3 doors. One red ,one yellow and one blue.'
+                      'Which colour do you choose?\n').lower()
         if choice3 == "red":
              print("It's a room full of fire. Game Over")
         elif choice3 == "yellow":
@@ -46,3 +53,5 @@ elif choice1=="l":
     print("You fell in to a hole. Game Over.")
 else:
     print("You put the wrong input.")
+
+#\(Backslash button is used for scape sequence)
