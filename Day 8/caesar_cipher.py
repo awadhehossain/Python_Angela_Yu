@@ -26,15 +26,26 @@ should_continue = True
 
 while should_continue:
 
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    while True:
+        direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+        if direction in ['encode', 'decode']:
+            break
+        else:
+            print("Invalid input. Please type 'encode' or 'decode'.")
+
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
     caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
-
-    restart = input("Type 'yes' if you want to go again. Otherwise, type 'no'.\n").lower()
-    if restart == "no":
-        should_continue = False
-        print("Goodbye")
-
+    while True:
+        restart = input("Type 'yes' if you want to go again. Otherwise, type 'no'.\n").lower()
+        if restart == "no":
+            should_continue = False
+            print("Goodbye")
+            break
+        elif restart=="yes":
+            should_continue=True
+            break
+        
+        
 

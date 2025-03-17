@@ -10,18 +10,22 @@ shift = int(input("Type the shift number:\n"))
 #  by the shift amount and print the encrypted text.
 # TODO-3: Call the 'encrypt()' function and pass in the user inputs. You should be able to test the code and encrypt a
 #  message.
-# TODO-4: What happens if you try to shift z forwards by 9? Can you fix the code?
-
-def encrypt(orginal_text,shift_amount):
-    cipher_text=""
-    for letter in orginal_text:
-        shift_postion=alphabet.index(letter)+shift_amount
-        shift_postion%=len(alphabet)
-        cipher_text+=alphabet[shift_postion]
-    print(f"Here is the encode result :{cipher_text}")
-
-encrypt(orginal_text=text,shift_amount=shift)
+# TODO-4: What happens if you try to shift z forwards by 9? Can you fix the code? 
 
 
+def encrypt(original_text,shift_amount):
+    cipher_text= ""
+    for letter in original_text:
+        shifted_position = alphabet.index(letter) + shift_amount
+        cipher_text+=alphabet[shifted_position]
+    print(f"Here is the encoded result {cipher_text}")
+
+
+
+encrypt(original_text=text,shift_amount=shift)
+
+
+
+    
 
 
